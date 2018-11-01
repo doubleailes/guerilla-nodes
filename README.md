@@ -30,8 +30,8 @@ jittered for the original cell center.
 - CellIndex (vector); returns the index of the cell in which the shading point falls into.
 
 ![Voronoi2D-CellCoords](images/voronoi2D-CellCoords.png)
-![Voronoi2D-CellCoords](images/voronoi2D-CellPosition.png)
-![Voronoi2D-CellCoords](images/voronoi2D-CellIndex.png)
+![Voronoi2D-CellPosition](images/voronoi2D-CellPosition.png)
+![Voronoi2D-CellIndex](images/voronoi2D-CellIndex.png)
 
 ##### Notes
 
@@ -39,4 +39,22 @@ You can modify the `modifyPosition` function in the Voronoï SL Node if you need
 more control on how the cell center is displaced from its original position.
 By default, the function jitters the cell position by a random vector.
 
+
+### Random number generator nodes
+
+#### Random
+##### Description
+
+This node generates a uniformly distributed random value for the given input
+vector.
+Even if they look similar, Color and Vector mode does not return the same
+output. Vector output is a normalized vector while Color is not. Make sure to
+choose the correct mode.
+
+##### Inputs
+
+- Mode: type of value to generate (Float, Vector or Color)
+- v: input vector for which to generate the random value
+
+##### Output
 
